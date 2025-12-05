@@ -75,7 +75,7 @@ impl Soil {
         }
     }
 
-    pub fn hg_pg(&self) -> u8 {
+    pub fn hg_pj(&self) -> u8 {
         if self.ph <= 5.5 {
             if self.r#type == Some("QT".to_string()) || self.r#type.is_none() {
                 if self.value <= 1.3 {
@@ -141,7 +141,7 @@ impl Soil {
         }
     }
 
-    pub fn as_pg(&self) -> u8 {
+    pub fn as_pj(&self) -> u8 {
         if self.ph <= 5.5 {
             if self.r#type == Some("QT".to_string()) || self.r#type.is_none() {
                 if self.value <= 40.0 {
@@ -207,7 +207,7 @@ impl Soil {
         }
     }
 
-    pub fn pb_pg(&self) -> u8 {
+    pub fn pb_pj(&self) -> u8 {
         if self.ph <= 5.5 {
             if self.r#type == Some("QT".to_string()) || self.r#type.is_none() {
                 if self.value <= 70.0 {
@@ -273,7 +273,7 @@ impl Soil {
         }
     }
 
-    pub fn cr_pg(&self) -> u8 {
+    pub fn cr_pj(&self) -> u8 {
         if self.ph <= 5.5 {
             if self.r#type == Some("QT".to_string()) || self.r#type.is_none() {
                 if self.value <= 150.0 {
@@ -339,7 +339,7 @@ impl Soil {
         }
     }
 
-    pub fn cu_pg(&self) -> u8 {
+    pub fn cu_pj(&self) -> u8 {
         if self.ph <= 6.5 {
             if self.r#type == Some("QT".to_string()) || self.r#type.is_none() {
                 if self.value <= 50.0 { 1 } else { 2 }
@@ -365,7 +365,7 @@ impl Soil {
         }
     }
 
-    pub fn ni_pg(&self) -> u8 {
+    pub fn ni_pj(&self) -> u8 {
         if self.ph <= 5.5 {
             if self.value <= 60.0 { 1 } else { 2 }
         } else if self.ph > 5.5 && self.ph <= 6.5 {
@@ -379,7 +379,7 @@ impl Soil {
         }
     }
 
-    pub fn zn_pg(&self) -> u8 {
+    pub fn zn_pj(&self) -> u8 {
         if self.ph <= 6.5 {
             if self.value <= 200.0 { 1 } else { 2 }
         } else if self.ph > 6.5 && self.ph <= 7.5 {
