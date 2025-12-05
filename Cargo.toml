@@ -2,5 +2,12 @@
 name = "cts-assess"
 version = "0.1.1"
 edition = "2024"
+authors = ["tanghy <tanghy@cloudthink.space>"]
+homepage = "https://www.cloudthink.space"
+publish = true
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/CloudThinkSpace/cts-assess"
+rust-version = "1.85.0"
+description = "This is a soil and agricultural product assessment tool."
 
 [dependencies]
