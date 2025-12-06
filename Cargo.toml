@@ -1,6 +1,6 @@
 [package]
 name = "cts-assess"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2024"
 authors = ["tanghy <tanghy@cloudthink.space>"]
 homepage = "https://www.cloudthink.space"
@@ -11,3 +11,5 @@ rust-version = "1.85.0"
 description = "This is a soil and agricultural product assessment tool."
 
 [dependencies]
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
