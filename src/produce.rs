@@ -58,11 +58,12 @@ impl Produce {
     }
 
     pub fn pb_pj(&self) -> u8 {
-        if ["GW", "SD", "DLSC", "KGJSL", "DL", "JGXLSG", "JG"].contains(&self.name.as_str()) {
+        if ["GW", "SD", "DLSC", "KGJSL", "DL", "JGXLSG", "JG", "YTL"].contains(&self.name.as_str())
+        {
             if self.value <= 0.2 { 1 } else { 2 }
         } else if ["LJL", "GQL", "JL", "QTSC", "SG", "GLSG"].contains(&self.name.as_str()) {
             if self.value <= 0.1 { 1 } else { 2 }
-        } else if ["YTL", "YCL"].contains(&self.name.as_str()) {
+        } else if ["YCL"].contains(&self.name.as_str()) {
             if self.value <= 0.3 { 1 } else { 2 }
         } else if ["SICAO"].contains(&self.name.as_str()) {
             if self.value <= 30.0 { 1 } else { 2 }

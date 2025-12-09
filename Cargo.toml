@@ -1,6 +1,6 @@
 [package]
 name = "cts-assess"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2024"
 authors = ["tanghy <tanghy@cloudthink.space>"]
 homepage = "https://www.cloudthink.space"
